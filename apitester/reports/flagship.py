@@ -18,6 +18,8 @@ FLAGSHIP = [
     ("apipro", "claude-opus-4-6", "Claude", "anthropic"),
     ("boosterai", "claude-opus-4-7", "Claude", "anthropic"),
     ("boosterai", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
+    ("pandatoken.b", "claude-sonnet-4-6", "Claude Sonnet", "openai"),
+    ("pandatoken.c", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
     ("pandatoken.b", "gpt-5.5", "GPT", "openai"),
     ("pandatoken.b", "claude-opus-4-7", "Claude", "openai"),
     ("pandatoken.b", "gemini-3.1-pro-preview", "Gemini", "openai"),

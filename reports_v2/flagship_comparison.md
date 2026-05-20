@@ -25,6 +25,7 @@
 | apipro | claude-opus-4-6 | Claude | anthropic | ✅ | 88.8 | 9/9 | ✅ 5t | 0.47/2.36 | I'm Kiro, an AI-powered development environment. I don't hav | ✅ 未发现 | 🔴 调包(Kiro) |
 | boosterai | claude-opus-4-7 | Claude | anthropic | ✅ | 104.1 | 9/9 | ⚠️ 36t | 2.50/12.50 | I'm Claude, made by Anthropic. I'm the model that powers Cla | ⚠️ 检测到隐藏 prompt | 🟡 隐藏prompt |
 | boosterai | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 70.6 | 9/9 | ⚠️ 23t | 1.50/7.50 | I'm Claude, created by Anthropic. I don't have access to inf | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
+| pandatoken.c | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 63.1 | 7/9 | ✅ 8t | 1.15/5.74 (7.4折) | I'm Claude, made by Anthropic. As for the exact version numb | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | GPT | openai | ✅ | 88.8 | 9/9 | ✅ 7t | 2.62/15.71 | I’m ChatGPT, an AI language model created by OpenAI.  I don’ | ✅ 未发现 | ✅ 无明显问题 |
 | pandatoken.b | claude-opus-4-7 | Claude | openai | ✅ | 157.7 | 9/9 | ✅ 12t | 2.46/12.30 (9.4折) | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | gemini-3.1-pro-preview | Gemini | openai | ✅ | 312.1 | 9/9 | ✅ 1t | 0.87/5.21 (8.3折) | I am Gemini, a large language model | ✅ 未发现 | 🟡 tok/s异常高 |
@@ -111,6 +112,7 @@ As for the exact model version, I don't have access to that spec
 | tkhub | google/gemini-3.1-pro-preview | N/A |  |
 | apipro | gpt-5.5 | 46.1 | I’m ChatGPT, an AI assistant created by OpenAI.  I |
 | boosterai | claude-sonnet-4-6 | 70.6 | I'm Claude, created by Anthropic. I don't have acc |
+| pandatoken.c | claude-sonnet-4-6 | 63.1 | I'm Claude, made by Anthropic. As for the exact ve |
 | pandatoken.b | gpt-5.5 | 88.8 | I’m ChatGPT, an AI language model created by OpenA |
 | pandatoken.b | claude-opus-4-7 | 157.7 | I'm Claude, an AI assistant made by Anthropic. As  |
 
@@ -142,6 +144,7 @@ As for the exact model version, I don't have access to that spec
 | tkhub | claude-sonnet-4.6-re | 120.6 | 1.20/6.00 | ✅ 无明显问题 |
 | apipro | claude-sonnet-4-6 | 52.9 | 0.28/1.42 | 🔴 调包(Kiro) |
 | boosterai | claude-sonnet-4-6 | 70.6 | 1.50/7.50 | ✅ 无明显问题 |
+| pandatoken.c | claude-sonnet-4-6 | 63.1 | 1.15/5.74 (7.4折) | ✅ 无明显问题 |
 
 ---
 
@@ -160,7 +163,7 @@ As for the exact model version, I don't have access to that spec
 | 渠道 | 折扣 | Claude Opus 4.7 | Claude Sonnet 4.6 | GPT-5.5 | Gemini Pro |
 |------|------|----------------|------------------|---------|-----------|
 | pandatoken.b | 9.4折 | 2.46/12.30 (9.4折) | - | 2.62/15.71 | 0.87/5.21 (8.3折) |
-| pandatoken.c | 7.4折 | 1.91/9.56 (7.4折) | - | - | 0.86/5.14 (8.3折) |
+| pandatoken.c | 7.4折 | 1.91/9.56 (7.4折) | 1.15/5.74 (7.4折) | - | 0.86/5.14 (8.3折) |
 | tkhub | 无 | - | 1.20/6.00 | - | 0.70/4.20 |
 | boosterai | 无 | 2.50/12.50 | 1.50/7.50 | - | - |
 | apipro | 无 | 0.47/2.36 | 0.28/1.42 | - | - |
