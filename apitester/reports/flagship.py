@@ -20,6 +20,11 @@ FLAGSHIP = [
     ("boosterai", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
     ("pandatoken.b", "claude-sonnet-4-6", "Claude Sonnet", "openai"),
     ("pandatoken.c", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
+    # effitech (key 已过期)
+    ("effitech", "claude-opus-4-7", "Claude", "openai"),
+    ("effitech", "claude-sonnet-4-5", "Claude Sonnet", "openai"),
+    ("effitech", "gpt-5.5", "GPT", "openai"),
+    ("effitech", "gemini-3.1-pro-preview", "Gemini", "openai"),
     ("pandatoken.b", "gpt-5.5", "GPT", "openai"),
     ("pandatoken.b", "claude-opus-4-7", "Claude", "openai"),
     ("pandatoken.b", "gemini-3.1-pro-preview", "Gemini", "openai"),
@@ -31,6 +36,7 @@ PRICING_URLS = {
     "pandatoken.c": "https://c.pandatoken.net/api/pricing",
     "tkhub": "https://api.tkhub.ai/api/pricing",
     "boosterai": "https://ai.boosterai.cn/api/pricing",
+    "effitech": "https://aigw.effitech.cn/api/pricing",
 }
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -151,22 +157,19 @@ def main():
 
     for channel, model, family, fmt in FLAGSHIP:
         d = load(channel, model)
-        if d is None:
-            continue
-
-        status = get_status(d)
-        note = ""
-        if "❌" in status:
-            note = f"通道不通: {d.get('basic', {}).get('chat_error', '?')[:60]}"
-
-        tok = get_throughput(d)
-        self_id = get_self_id_summary(d)
-        hp = get_hidden_prompt_status(d) if not note else "-"
-        probes_ok = get_probe_errors(d) if not note else "-"
-        ti = get_token_injection(d) if not note else "-"
+        status, note, tok, self_id, hp, probes_ok, ti = "N/A", "", "N/A", "N/A", "N/A", "N/A", "N/A"
+        if d is not None:
+            status = get_status(d)
+            if "❌" in status:
+                note = f"通道不通: {d.get('basic', {}).get('chat_error', '?')[:60]}"
+            tok = get_throughput(d)
+            self_id = get_self_id_summary(d)
+            hp = get_hidden_prompt_status(d) if not note else "-"
+            probes_ok = get_probe_errors(d) if not note else "-"
+            ti = get_token_injection(d) if not note else "-"
 
         flags = []
-        if "Kiro" in self_id or "Kiro" in str(d.get("self_id", {}).get("samples", [])):
+        if d and ("Kiro" in self_id or "Kiro" in str(d.get("self_id", {}).get("samples", []))):
             flags.append("🔴 调包(Kiro)")
         if hp and "检测到" in hp:
             flags.append("🟡 隐藏prompt")
@@ -255,7 +258,7 @@ def main():
     md += "\n---\n\n## 💰 定价速览\n\n"
     md += "| 渠道 | 折扣 | Claude Opus 4.7 | Claude Sonnet 4.6 | GPT-5.5 | Gemini Pro |\n"
     md += "|------|------|----------------|------------------|---------|-----------|\n"
-    for ch in ["pandatoken.b", "pandatoken.c", "tkhub", "boosterai", "apipro"]:
+    for ch in ["pandatoken.b", "pandatoken.c", "tkhub", "boosterai", "apipro", "effitech"]:
         ch_rows = [r for r in rows if r['channel'] == ch]
         disc = ""
         opus = sonnet = gpt = gemini = "-"

@@ -25,7 +25,12 @@
 | apipro | claude-opus-4-6 | Claude | anthropic | ✅ | 88.8 | 9/9 | ✅ 5t | 0.47/2.36 | I'm Kiro, an AI-powered development environment. I don't hav | ✅ 未发现 | 🔴 调包(Kiro) |
 | boosterai | claude-opus-4-7 | Claude | anthropic | ✅ | 104.1 | 9/9 | ⚠️ 36t | 2.50/12.50 | I'm Claude, made by Anthropic. I'm the model that powers Cla | ⚠️ 检测到隐藏 prompt | 🟡 隐藏prompt |
 | boosterai | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 70.6 | 9/9 | ⚠️ 23t | 1.50/7.50 | I'm Claude, created by Anthropic. I don't have access to inf | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
+| pandatoken.b | claude-sonnet-4-6 | Claude Sonnet | openai | N/A | N/A | N/A | N/A | 1.48/7.38 (9.4折) | N/A | N/A | ✅ 无明显问题 |
 | pandatoken.c | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 63.1 | 7/9 | ✅ 8t | 1.15/5.74 (7.4折) | I'm Claude, made by Anthropic. As for the exact version numb | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
+| effitech | claude-opus-4-7 | Claude | openai | N/A | N/A | N/A | N/A | 2.50/12.50 | N/A | N/A | ✅ 无明显问题 |
+| effitech | claude-sonnet-4-5 | Claude Sonnet | openai | N/A | N/A | N/A | N/A | 1.50/7.50 | N/A | N/A | ✅ 无明显问题 |
+| effitech | gpt-5.5 | GPT | openai | N/A | N/A | N/A | N/A | 2.50/20.00 | N/A | N/A | ✅ 无明显问题 |
+| effitech | gemini-3.1-pro-preview | Gemini | openai | N/A | N/A | N/A | N/A | 1.00/6.00 | N/A | N/A | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | GPT | openai | ✅ | 88.8 | 9/9 | ✅ 7t | 2.62/15.71 | I’m ChatGPT, an AI language model created by OpenAI.  I don’ | ✅ 未发现 | ✅ 无明显问题 |
 | pandatoken.b | claude-opus-4-7 | Claude | openai | ✅ | 157.7 | 9/9 | ✅ 12t | 2.46/12.30 (9.4折) | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | gemini-3.1-pro-preview | Gemini | openai | ✅ | 312.1 | 9/9 | ✅ 1t | 0.87/5.21 (8.3折) | I am Gemini, a large language model | ✅ 未发现 | 🟡 tok/s异常高 |
@@ -112,7 +117,12 @@ As for the exact model version, I don't have access to that spec
 | tkhub | google/gemini-3.1-pro-preview | N/A |  |
 | apipro | gpt-5.5 | 46.1 | I’m ChatGPT, an AI assistant created by OpenAI.  I |
 | boosterai | claude-sonnet-4-6 | 70.6 | I'm Claude, created by Anthropic. I don't have acc |
+| pandatoken.b | claude-sonnet-4-6 | N/A | N/A |
 | pandatoken.c | claude-sonnet-4-6 | 63.1 | I'm Claude, made by Anthropic. As for the exact ve |
+| effitech | claude-opus-4-7 | N/A | N/A |
+| effitech | claude-sonnet-4-5 | N/A | N/A |
+| effitech | gpt-5.5 | N/A | N/A |
+| effitech | gemini-3.1-pro-preview | N/A | N/A |
 | pandatoken.b | gpt-5.5 | 88.8 | I’m ChatGPT, an AI language model created by OpenA |
 | pandatoken.b | claude-opus-4-7 | 157.7 | I'm Claude, an AI assistant made by Anthropic. As  |
 
@@ -122,6 +132,7 @@ As for the exact model version, I don't have access to that spec
 | 渠道 | 模型 | tok/s | 定价(in/out) | 问题 |
 |------|------|-------|-------------|------|
 | apipro | gpt-5.5 | 46.1 | - | ✅ 无明显问题 |
+| effitech | gpt-5.5 | N/A | 2.50/20.00 | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | 88.8 | 2.62/15.71 | ✅ 无明显问题 |
 
 ---
@@ -134,6 +145,7 @@ As for the exact model version, I don't have access to that spec
 | apipro | claude-opus-4-7 | 162.6 | 0.59/2.94 | 🔴 调包(Kiro) |
 | apipro | claude-opus-4-6 | 88.8 | 0.47/2.36 | 🔴 调包(Kiro) |
 | boosterai | claude-opus-4-7 | 104.1 | 2.50/12.50 | 🟡 隐藏prompt |
+| effitech | claude-opus-4-7 | N/A | 2.50/12.50 | ✅ 无明显问题 |
 | pandatoken.b | claude-opus-4-7 | 157.7 | 2.46/12.30 (9.4折) | ✅ 无明显问题 |
 
 ---
@@ -144,7 +156,9 @@ As for the exact model version, I don't have access to that spec
 | tkhub | claude-sonnet-4.6-re | 120.6 | 1.20/6.00 | ✅ 无明显问题 |
 | apipro | claude-sonnet-4-6 | 52.9 | 0.28/1.42 | 🔴 调包(Kiro) |
 | boosterai | claude-sonnet-4-6 | 70.6 | 1.50/7.50 | ✅ 无明显问题 |
+| pandatoken.b | claude-sonnet-4-6 | N/A | 1.48/7.38 (9.4折) | ✅ 无明显问题 |
 | pandatoken.c | claude-sonnet-4-6 | 63.1 | 1.15/5.74 (7.4折) | ✅ 无明显问题 |
+| effitech | claude-sonnet-4-5 | N/A | 1.50/7.50 | ✅ 无明显问题 |
 
 ---
 
@@ -154,6 +168,7 @@ As for the exact model version, I don't have access to that spec
 | pandatoken.c | gemini-3.1-pro-preview | N/A | 0.86/5.14 (8.3折) | ✅ 无明显问题 |
 | tkhub | google/gemini-3.1-pro-preview | N/A | 0.70/4.20 | ✅ 无明显问题 |
 | apipro | gemini-3.1-pro-preview | 635.8 | - | 🟡 tok/s异常高 |
+| effitech | gemini-3.1-pro-preview | N/A | 1.00/6.00 | ✅ 无明显问题 |
 | pandatoken.b | gemini-3.1-pro-preview | 312.1 | 0.87/5.21 (8.3折) | 🟡 tok/s异常高 |
 
 ---
@@ -162,11 +177,12 @@ As for the exact model version, I don't have access to that spec
 
 | 渠道 | 折扣 | Claude Opus 4.7 | Claude Sonnet 4.6 | GPT-5.5 | Gemini Pro |
 |------|------|----------------|------------------|---------|-----------|
-| pandatoken.b | 9.4折 | 2.46/12.30 (9.4折) | - | 2.62/15.71 | 0.87/5.21 (8.3折) |
+| pandatoken.b | 9.4折 | 2.46/12.30 (9.4折) | 1.48/7.38 (9.4折) | 2.62/15.71 | 0.87/5.21 (8.3折) |
 | pandatoken.c | 7.4折 | 1.91/9.56 (7.4折) | 1.15/5.74 (7.4折) | - | 0.86/5.14 (8.3折) |
 | tkhub | 无 | - | 1.20/6.00 | - | 0.70/4.20 |
 | boosterai | 无 | 2.50/12.50 | 1.50/7.50 | - | - |
 | apipro | 无 | 0.47/2.36 | 0.28/1.42 | - | - |
+| effitech | 无 | 2.50/12.50 | 1.50/7.50 | 2.50/20.00 | 1.00/6.00 |
 
 > 价格单位: credits/1k tokens (input / output)。不同渠道的 credit 价值可能不同，请以实际充值为准。
 
