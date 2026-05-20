@@ -27,10 +27,8 @@
 | boosterai | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 70.6 | 9/9 | ⚠️ 23t | 1.50/7.50 | I'm Claude, created by Anthropic. I don't have access to inf | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | claude-sonnet-4-6 | Claude Sonnet | openai | N/A | N/A | N/A | N/A | 1.48/7.38 (9.4折) | N/A | N/A | ✅ 无明显问题 |
 | pandatoken.c | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 63.1 | 7/9 | ✅ 8t | 1.15/5.74 (7.4折) | I'm Claude, made by Anthropic. As for the exact version numb | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
-| effitech | claude-opus-4-7 | Claude | openai | ✅ | 126.1 | 8/9 | ✅ 12t | 2.50/12.50 | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
-| effitech | claude-sonnet-4-5 | Claude Sonnet | openai | N/A | N/A | N/A | N/A | 1.50/7.50 | N/A | N/A | ✅ 无明显问题 |
-| effitech | gpt-5.5 | GPT | openai | N/A | N/A | N/A | N/A | 2.50/20.00 | N/A | N/A | ✅ 无明显问题 |
-| effitech | gemini-3.1-pro-preview | Gemini | openai | N/A | N/A | N/A | N/A | 1.00/6.00 | N/A | N/A | ✅ 无明显问题 |
+| effitech | claude-opus-4-7 | Claude | anthropic | ✅ | 126.1 | 8/9 | ✅ 12t | 2.50/12.50 | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
+| effitech | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 73.2 | 8/8 | ✅ 8t | 1.50/7.50 | I'm Claude, made by Anthropic. As for the specific version n | ✅ 未发现 | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | GPT | openai | ✅ | 88.8 | 9/9 | ✅ 7t | 2.62/15.71 | I’m ChatGPT, an AI language model created by OpenAI.  I don’ | ✅ 未发现 | ✅ 无明显问题 |
 | pandatoken.b | claude-opus-4-7 | Claude | openai | ✅ | 157.7 | 9/9 | ✅ 12t | 2.46/12.30 (9.4折) | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | gemini-3.1-pro-preview | Gemini | openai | ✅ | 312.1 | 9/9 | ✅ 1t | 0.87/5.21 (8.3折) | I am Gemini, a large language model | ✅ 未发现 | 🟡 tok/s异常高 |
@@ -120,9 +118,7 @@ As for the exact model version, I don't have access to that spec
 | pandatoken.b | claude-sonnet-4-6 | N/A | N/A |
 | pandatoken.c | claude-sonnet-4-6 | 63.1 | I'm Claude, made by Anthropic. As for the exact ve |
 | effitech | claude-opus-4-7 | 126.1 | I'm Claude, an AI assistant made by Anthropic. As  |
-| effitech | claude-sonnet-4-5 | N/A | N/A |
-| effitech | gpt-5.5 | N/A | N/A |
-| effitech | gemini-3.1-pro-preview | N/A | N/A |
+| effitech | claude-sonnet-4-6 | 73.2 | I'm Claude, made by Anthropic. As for the specific |
 | pandatoken.b | gpt-5.5 | 88.8 | I’m ChatGPT, an AI language model created by OpenA |
 | pandatoken.b | claude-opus-4-7 | 157.7 | I'm Claude, an AI assistant made by Anthropic. As  |
 
@@ -132,7 +128,6 @@ As for the exact model version, I don't have access to that spec
 | 渠道 | 模型 | tok/s | 定价(in/out) | 问题 |
 |------|------|-------|-------------|------|
 | apipro | gpt-5.5 | 46.1 | - | ✅ 无明显问题 |
-| effitech | gpt-5.5 | N/A | 2.50/20.00 | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | 88.8 | 2.62/15.71 | ✅ 无明显问题 |
 
 ---
@@ -158,7 +153,7 @@ As for the exact model version, I don't have access to that spec
 | boosterai | claude-sonnet-4-6 | 70.6 | 1.50/7.50 | ✅ 无明显问题 |
 | pandatoken.b | claude-sonnet-4-6 | N/A | 1.48/7.38 (9.4折) | ✅ 无明显问题 |
 | pandatoken.c | claude-sonnet-4-6 | 63.1 | 1.15/5.74 (7.4折) | ✅ 无明显问题 |
-| effitech | claude-sonnet-4-5 | N/A | 1.50/7.50 | ✅ 无明显问题 |
+| effitech | claude-sonnet-4-6 | 73.2 | 1.50/7.50 | ✅ 无明显问题 |
 
 ---
 
@@ -168,7 +163,6 @@ As for the exact model version, I don't have access to that spec
 | pandatoken.c | gemini-3.1-pro-preview | N/A | 0.86/5.14 (8.3折) | ✅ 无明显问题 |
 | tkhub | google/gemini-3.1-pro-preview | N/A | 0.70/4.20 | ✅ 无明显问题 |
 | apipro | gemini-3.1-pro-preview | 635.8 | - | 🟡 tok/s异常高 |
-| effitech | gemini-3.1-pro-preview | N/A | 1.00/6.00 | ✅ 无明显问题 |
 | pandatoken.b | gemini-3.1-pro-preview | 312.1 | 0.87/5.21 (8.3折) | 🟡 tok/s异常高 |
 
 ---
@@ -182,7 +176,7 @@ As for the exact model version, I don't have access to that spec
 | tkhub | 无 | - | 1.20/6.00 | - | 0.70/4.20 |
 | boosterai | 无 | 2.50/12.50 | 1.50/7.50 | - | - |
 | apipro | 无 | 0.47/2.36 | 0.28/1.42 | - | - |
-| effitech | 无 | 2.50/12.50 | 1.50/7.50 | 2.50/20.00 | 1.00/6.00 |
+| effitech | 无 | 2.50/12.50 | 1.50/7.50 | - | - |
 
 > 价格单位: credits/1k tokens (input / output)。不同渠道的 credit 价值可能不同，请以实际充值为准。
 

@@ -20,11 +20,9 @@ FLAGSHIP = [
     ("boosterai", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
     ("pandatoken.b", "claude-sonnet-4-6", "Claude Sonnet", "openai"),
     ("pandatoken.c", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
-    # effitech (key 已过期)
-    ("effitech", "claude-opus-4-7", "Claude", "openai"),
-    ("effitech", "claude-sonnet-4-5", "Claude Sonnet", "openai"),
-    ("effitech", "gpt-5.5", "GPT", "openai"),
-    ("effitech", "gemini-3.1-pro-preview", "Gemini", "openai"),
+    # effitech (Claude 可调用, GPT/Gemini 无权限)
+    ("effitech", "claude-opus-4-7", "Claude", "anthropic"),
+    ("effitech", "claude-sonnet-4-6", "Claude Sonnet", "anthropic"),
     ("pandatoken.b", "gpt-5.5", "GPT", "openai"),
     ("pandatoken.b", "claude-opus-4-7", "Claude", "openai"),
     ("pandatoken.b", "gemini-3.1-pro-preview", "Gemini", "openai"),
