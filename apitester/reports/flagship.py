@@ -59,6 +59,20 @@ def fetch_pricing():
 
 def get_price(price_data, channel, model_name):
     """从定价数据中匹配模型价格"""
+    # apipro: 从 credit_usage 反推（即使没有 pricing 端点）
+    if channel == "apipro":
+        d = load(channel, model_name)
+        if d:
+            u = d.get("basic", {}).get("usage", {})
+            credit = u.get("credit_usage")
+            inp = u.get("input_tokens", u.get("prompt_tokens", 0))
+            out = u.get("output_tokens", u.get("completion_tokens", 0))
+            if credit and inp and out:
+                ratio = 6 if "gpt" in model_name.lower() else 5
+                input_price = credit / (inp + out * ratio) * 1000
+                output_price = input_price * ratio
+                return {"input": round(input_price, 4), "output": round(output_price, 4), "discount": ""}
+
     if channel not in price_data:
         return None
     # 精确匹配
@@ -166,8 +180,6 @@ def main():
             disc = price.get("discount", "")
             if disc:
                 price_str += f" ({disc})"
-        elif channel == "apipro":
-            price_str = "按用量计费"
         else:
             price_str = "-"
 

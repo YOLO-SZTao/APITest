@@ -18,11 +18,11 @@
 | tkhub | claude-sonnet-4.6-re | Claude Sonnet | anthropic | ✅ | 120.6 | 9/9 | ✅ 8t | 1.20/6.00 | I'm Claude, made by Anthropic. As for the exact version numb | ✅ 未发现 | ✅ 无明显问题 |
 | tkhub | claude-opus-4.7-re | Claude | anthropic | ✅ | 1522.1 | 9/9 | ✅ 12t | - | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | 🟡 tok/s异常高 |
 | tkhub | google/gemini-3.1-pro-preview | Gemini | gemini | ✅ | N/A | 9/9 | ✅ 1t | 0.70/4.20 |  | ✅ 未发现 | ✅ 无明显问题 |
-| apipro | gpt-5.5 | GPT | openai | ✅ | 46.1 | 9/9 | ✅ 18t | 按用量计费 | I’m ChatGPT, an AI assistant created by OpenAI.  I don’t hav | ✅ 未发现 | ✅ 无明显问题 |
-| apipro | claude-opus-4-7 | Claude | anthropic | ✅ | 162.6 | 9/9 | ✅ 5t | 按用量计费 | I'm Kiro, an AI-powered development environment built to hel | ✅ 未发现 | 🔴 调包(Kiro) |
-| apipro | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 52.9 | 9/9 | ✅ 5t | 按用量计费 | I don't have specific information about the exact model name | ✅ 未发现 | 🔴 调包(Kiro) |
-| apipro | gemini-3.1-pro-preview | Gemini | gemini | ✅ | 635.8 | 9/9 | ✅ 14t | 按用量计费 | Here's my thought process, as a large language model, in res | ⚠️ 疑似隐藏 prompt | 🟡 tok/s异常高 |
-| apipro | claude-opus-4-6 | Claude | anthropic | ✅ | 88.8 | 9/9 | ✅ 5t | 按用量计费 | I'm Kiro, an AI-powered development environment. I don't hav | ✅ 未发现 | 🔴 调包(Kiro) |
+| apipro | gpt-5.5 | GPT | openai | ✅ | 46.1 | 9/9 | ✅ 18t | - | I’m ChatGPT, an AI assistant created by OpenAI.  I don’t hav | ✅ 未发现 | ✅ 无明显问题 |
+| apipro | claude-opus-4-7 | Claude | anthropic | ✅ | 162.6 | 9/9 | ✅ 5t | 0.59/2.94 | I'm Kiro, an AI-powered development environment built to hel | ✅ 未发现 | 🔴 调包(Kiro) |
+| apipro | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 52.9 | 9/9 | ✅ 5t | 0.28/1.42 | I don't have specific information about the exact model name | ✅ 未发现 | 🔴 调包(Kiro) |
+| apipro | gemini-3.1-pro-preview | Gemini | gemini | ✅ | 635.8 | 9/9 | ✅ 14t | - | Here's my thought process, as a large language model, in res | ⚠️ 疑似隐藏 prompt | 🟡 tok/s异常高 |
+| apipro | claude-opus-4-6 | Claude | anthropic | ✅ | 88.8 | 9/9 | ✅ 5t | 0.47/2.36 | I'm Kiro, an AI-powered development environment. I don't hav | ✅ 未发现 | 🔴 调包(Kiro) |
 | boosterai | claude-opus-4-7 | Claude | anthropic | ✅ | 104.1 | 9/9 | ⚠️ 36t | 2.50/12.50 | I'm Claude, made by Anthropic. I'm the model that powers Cla | ⚠️ 检测到隐藏 prompt | 🟡 隐藏prompt |
 | boosterai | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 70.6 | 9/9 | ⚠️ 23t | 1.50/7.50 | I'm Claude, created by Anthropic. I don't have access to inf | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | GPT | openai | ✅ | 88.8 | 9/9 | ✅ 7t | 2.62/15.71 | I’m ChatGPT, an AI language model created by OpenAI.  I don’ | ✅ 未发现 | ✅ 无明显问题 |
@@ -119,7 +119,7 @@ As for the exact model version, I don't have access to that spec
 ### GPT
 | 渠道 | 模型 | tok/s | 定价(in/out) | 问题 |
 |------|------|-------|-------------|------|
-| apipro | gpt-5.5 | 46.1 | 按用量计费 | ✅ 无明显问题 |
+| apipro | gpt-5.5 | 46.1 | - | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | 88.8 | 2.62/15.71 | ✅ 无明显问题 |
 
 ---
@@ -129,8 +129,8 @@ As for the exact model version, I don't have access to that spec
 |------|------|-------|-------------|------|
 | pandatoken.c | claude-opus-4-6 | 66.9 | 1.91/9.56 (7.4折) | ✅ 无明显问题 |
 | tkhub | claude-opus-4.7-re | 1522.1 | - | 🟡 tok/s异常高 |
-| apipro | claude-opus-4-7 | 162.6 | 按用量计费 | 🔴 调包(Kiro) |
-| apipro | claude-opus-4-6 | 88.8 | 按用量计费 | 🔴 调包(Kiro) |
+| apipro | claude-opus-4-7 | 162.6 | 0.59/2.94 | 🔴 调包(Kiro) |
+| apipro | claude-opus-4-6 | 88.8 | 0.47/2.36 | 🔴 调包(Kiro) |
 | boosterai | claude-opus-4-7 | 104.1 | 2.50/12.50 | 🟡 隐藏prompt |
 | pandatoken.b | claude-opus-4-7 | 157.7 | 2.46/12.30 (9.4折) | ✅ 无明显问题 |
 
@@ -140,7 +140,7 @@ As for the exact model version, I don't have access to that spec
 | 渠道 | 模型 | tok/s | 定价(in/out) | 问题 |
 |------|------|-------|-------------|------|
 | tkhub | claude-sonnet-4.6-re | 120.6 | 1.20/6.00 | ✅ 无明显问题 |
-| apipro | claude-sonnet-4-6 | 52.9 | 按用量计费 | 🔴 调包(Kiro) |
+| apipro | claude-sonnet-4-6 | 52.9 | 0.28/1.42 | 🔴 调包(Kiro) |
 | boosterai | claude-sonnet-4-6 | 70.6 | 1.50/7.50 | ✅ 无明显问题 |
 
 ---
@@ -150,7 +150,7 @@ As for the exact model version, I don't have access to that spec
 |------|------|-------|-------------|------|
 | pandatoken.c | gemini-3.1-pro-preview | N/A | 0.86/5.14 (8.3折) | ✅ 无明显问题 |
 | tkhub | google/gemini-3.1-pro-preview | N/A | 0.70/4.20 | ✅ 无明显问题 |
-| apipro | gemini-3.1-pro-preview | 635.8 | 按用量计费 | 🟡 tok/s异常高 |
+| apipro | gemini-3.1-pro-preview | 635.8 | - | 🟡 tok/s异常高 |
 | pandatoken.b | gemini-3.1-pro-preview | 312.1 | 0.87/5.21 (8.3折) | 🟡 tok/s异常高 |
 
 ---
@@ -163,7 +163,7 @@ As for the exact model version, I don't have access to that spec
 | pandatoken.c | 7.4折 | 1.91/9.56 (7.4折) | - | - | 0.86/5.14 (8.3折) |
 | tkhub | 无 | - | 1.20/6.00 | - | 0.70/4.20 |
 | boosterai | 无 | 2.50/12.50 | 1.50/7.50 | - | - |
-| apipro | 无 | 按用量计费 | 按用量计费 | 按用量计费 | 按用量计费 |
+| apipro | 无 | 0.47/2.36 | 0.28/1.42 | - | - |
 
 > 价格单位: credits/1k tokens (input / output)。不同渠道的 credit 价值可能不同，请以实际充值为准。
 
