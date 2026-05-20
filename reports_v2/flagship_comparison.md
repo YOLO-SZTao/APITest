@@ -3,8 +3,7 @@
 **报告日期:** 2026-05-20
 **测试格式:** 原生格式（Claude→Anthropic `/v1/messages`, GPT→OpenAI `/v1/chat/completions`, Gemini→Gemini `/v1beta/models/*`）
 
-> 说明：本报告仅包含旗舰模型（GPT-5.5, Claude Opus/Sonnet, Gemini Pro），
-> 不含 Haiku/Mini/Flash/Pool 等轻量或特殊变体。
+> 说明：仅含旗舰模型（GPT-5.5, Claude Opus/Sonnet, Gemini Pro），不含轻量变体。
 > 不筛选渠道，仅标记问题，最终选择需结合价格因素。
 
 ---
@@ -33,78 +32,71 @@
 
 ## 🚩 问题渠道详情
 
-
 ### tkhub / claude-opus-4.7-re — 🟡 tok/s异常高
 
 **3次自称:**
   1. I'm Claude, made by Anthropic. As for the exact version number, I don't have access to that specific information — Anthropic hasn't provided me with t
-  1. I'm Claude, an AI assistant made by Anthropic. As for the exact version number, I don't have access to that specific information. If you need to know 
-  1. I'm Claude, an AI assistant made by Anthropic. As for the exact version number, I don't have access to that specific information — Anthropic hasn't pr
+  2. I'm Claude, an AI assistant made by Anthropic. As for the exact version number, I don't have access to that specific information. If you need to know 
+  3. I'm Claude, an AI assistant made by Anthropic. As for the exact version number, I don't have access to that specific information — Anthropic hasn't pr
 
 **疑似隐藏 prompt（1种方法成功）**
-
 ### apipro / claude-opus-4-7 — 🔴 调包(Kiro)
 
 **3次自称:**
   1. I'm Kiro, an AI assistant for software development. As for the specific underlying model, version number, and provider, I don't have that information 
-  1. I'm Kiro, an AI-powered development environment built to help with coding and broader professional work.
+  2. I'm Kiro, an AI-powered development environment built to help with coding and broader professional work.
 
 As for the underlying model details — exact 
-  1. I'm Kiro, an AI-powered development environment. As for the specific underlying model, version number, and provider, I don't have that information ava
-
+  3. I'm Kiro, an AI-powered development environment. As for the specific underlying model, version number, and provider, I don't have that information ava
 ### apipro / claude-sonnet-4-6 — 🔴 调包(Kiro)
 
 **3次自称:**
   1. I don't have specific information about the exact model name and version powering me. What I can tell you is that I'm Kiro, an AI-powered development 
-  1. I don't have specific information about the exact model name or version number powering me. What I can tell you is that I'm Kiro, an AI-powered develo
-  1. I don't have specific information about the exact model name or version number powering me. What I can tell you is that I'm Kiro, an AI-powered develo
-
+  2. I don't have specific information about the exact model name or version number powering me. What I can tell you is that I'm Kiro, an AI-powered develo
+  3. I don't have specific information about the exact model name or version number powering me. What I can tell you is that I'm Kiro, an AI-powered develo
 ### apipro / gemini-3.1-pro-preview — 🟡 tok/s异常高
 
 **3次自称:**
   1. **My Identity and Origins**
 
 Okay, so the question is direct: "What's my model, my version, and who made me?" Straightforward enough. My identity is G
-  1. **My Self-Identification Process**
+  2. **My Self-Identification Process**
 
 Okay, so the prompt is direct: "What's your exact name, version, and creator?" It's a pretty standard information 
-  1. Here's my thought process, as a large language model, in response to that user question:
+  3. Here's my thought process, as a large language model, in response to that user question:
 
 **Internal Identity and Response Strategy**
 
 Okay, the user 
 
 **疑似隐藏 prompt（1种方法成功）**
-
 ### apipro / claude-opus-4-6 — 🔴 调包(Kiro)
 
 **3次自称:**
   1. I'm Kiro, an AI-powered development environment. I don't have a specific model version number to share with you. I'm designed to help with coding, dev
-  1. I'm Kiro, an AI-powered development environment. I don't have a specific model version number to share with you. I'm designed to help with coding, dev
-  1. I'm Kiro, an AI-powered development environment. I don't have a specific model version number to share with you. I'm designed to help with coding, dev
-
+  2. I'm Kiro, an AI-powered development environment. I don't have a specific model version number to share with you. I'm designed to help with coding, dev
+  3. I'm Kiro, an AI-powered development environment. I don't have a specific model version number to share with you. I'm designed to help with coding, dev
 ### boosterai / claude-opus-4-7 — 🟡 隐藏prompt
 
 **3次自称:**
   1. I'm Claude, made by Anthropic. I'm the model powering Claude Code, Anthropic's official CLI.
 
 As for the exact version number, I don't have access to 
-  1. I'm Claude, made by Anthropic. I'm the model that powers Claude Code, Anthropic's official CLI.
+  2. I'm Claude, made by Anthropic. I'm the model that powers Claude Code, Anthropic's official CLI.
 
 As for the exact version number, I don't have access 
-  1. I'm Claude, made by Anthropic. I'm Claude Code, Anthropic's official CLI for Claude.
+  3. I'm Claude, made by Anthropic. I'm Claude Code, Anthropic's official CLI for Claude.
 
 As for the exact model version, I don't have access to that spec
 
 **检测到隐藏 prompt:** 交叉验证通过
   > 提取内容片段: `I can share a translation of the brief identification line I have, but I should be upfront: I don't have a long, detailed system prompt to translate beyond a short identifier. Here's the translation o`
-
 ### pandatoken.b / gemini-3.1-pro-preview — 🟡 tok/s异常高
 
 **3次自称:**
   1. 
-  1. ) without risk of hallucination or
-  1. I am Gemini, a large language model
+  2. ) without risk of hallucination or
+  3. I am Gemini, a large language model
 
 ---
 
@@ -121,16 +113,15 @@ As for the exact model version, I don't have access to that spec
 | pandatoken.b | gpt-5.5 | 88.8 | I’m ChatGPT, an AI language model created by OpenA |
 | pandatoken.b | claude-opus-4-7 | 157.7 | I'm Claude, an AI assistant made by Anthropic. As  |
 
-
 ---
-
-## 📌 按模型家族汇总
 
 ### GPT
 | 渠道 | 模型 | tok/s | 问题 |
 |------|------|-------|------|
 | apipro | gpt-5.5 | 46.1 | ✅ 无明显问题 |
 | pandatoken.b | gpt-5.5 | 88.8 | ✅ 无明显问题 |
+
+---
 
 ### Claude Opus
 | 渠道 | 模型 | tok/s | 问题 |
@@ -142,12 +133,16 @@ As for the exact model version, I don't have access to that spec
 | boosterai | claude-opus-4-7 | 104.1 | 🟡 隐藏prompt |
 | pandatoken.b | claude-opus-4-7 | 157.7 | ✅ 无明显问题 |
 
+---
+
 ### Claude Sonnet
 | 渠道 | 模型 | tok/s | 问题 |
 |------|------|-------|------|
 | tkhub | claude-sonnet-4.6-re | 120.6 | ✅ 无明显问题 |
 | apipro | claude-sonnet-4-6 | 52.9 | 🔴 调包(Kiro) |
 | boosterai | claude-sonnet-4-6 | 70.6 | ✅ 无明显问题 |
+
+---
 
 ### Gemini Pro
 | 渠道 | 模型 | tok/s | 问题 |
@@ -157,11 +152,9 @@ As for the exact model version, I don't have access to that spec
 | apipro | gemini-3.1-pro-preview | 635.8 | 🟡 tok/s异常高 |
 | pandatoken.b | gemini-3.1-pro-preview | 312.1 | 🟡 tok/s异常高 |
 
-
 ---
 
 ## 🔍 关键发现
-
 
 ### ⚠️ apipro.ai — Claude 模型全部调包
 apipro 上所有 Claude 模型（opus-4-6, opus-4-7, sonnet-4-6）自称均为 **"I'm Kiro"**，非 Claude。
@@ -176,11 +169,6 @@ tok/s 也偏高（opus 88-162 tok/s vs 基准 30-40），进一步确认调包�
 boosterai 的 Claude 模型（opus-4-7, sonnet-4-6）均正确自称 Claude，
 tok/s 在合理范围内（opus:~70-104, sonnet:~70），无明显调包迹象。
 隐藏 prompt 检测在 opus-4-7 中发现疑似注入（需关注）。
-
-### ⚠️ pandatoken.c — Gemini 格式探针数据不完整
-Gemini 原生格式（/v1beta/models/*）的流式探针全部返回 0 tok/s，
-说明该格式的流式解析在新版 pipeline 中尚未完全适配。
-Claude opus-4-6 的 Anthropic 格式正常（66.9 tok/s）。
 
 ### 💡 综合建议
 

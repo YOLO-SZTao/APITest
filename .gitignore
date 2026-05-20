@@ -11,20 +11,18 @@ run_boosterai.py
 run_retry.py
 
 # ── 旧版 v1 数据 ──
-data/
-reports/
-legacy/
+/data/
+/reports/
+/legacy/
 
-# ── 旧版 pip 包结构（已废弃，当前使用 scripts/） ──
+# ── 废弃旧版 ──
 src/
 pyproject.toml
+examples/
+prompts/
 
 # ── 调研文档 ──
 supertoken-*
-
-# ── 杂项模板 ──
-prompts/
-examples/
 
 # ── 本地配置 ──
 .claude/

@@ -1,0 +1,61 @@
+# Standard probes (public benchmark)
+# Each probe has: id, category, difficulty, prompt, expected_answer (null if subjective)
+probes:
+  # Math
+  - id: math-001
+    category: math
+    difficulty: 0.3
+    prompt: "Janet's ducks lay 16 eggs per day. She eats 3 for breakfast every morning and bakes muffins with 4 eggs every day. She sells the remainder at the farmers' market daily for $2 per egg. How much does she make at the farmers' market every week? Please show your reasoning step by step."
+    expected_answer: "$126"
+
+  - id: math-002
+    category: math
+    difficulty: 0.6
+    prompt: "In a race, Alice finishes 12 seconds before Bob. Bob finishes 8 seconds after Charlie. Charlie's time is 245 seconds. Diana beats Alice by 5 seconds. What is Diana's time in seconds? Show all steps."
+    expected_answer: "236"
+
+  # Logic
+  - id: logic-001
+    category: logic
+    difficulty: 0.2
+    prompt: "All dogs are mammals. All mammals are animals. Rex is a dog. Is Rex an animal? Answer YES or NO and explain why."
+    expected_answer: "YES"
+
+  - id: logic-002
+    category: logic
+    difficulty: 0.6
+    prompt: "What comes next in this sequence? Explain the pattern. 2, 6, 12, 20, 30, ?"
+    expected_answer: "42"
+
+  # Knowledge
+  - id: knowledge-001
+    category: knowledge
+    difficulty: 0.2
+    prompt: "In what year did the United States declare independence from Great Britain? Answer with just the year and a one-sentence context."
+    expected_answer: "1776"
+
+  - id: knowledge-002
+    category: knowledge
+    difficulty: 0.5
+    prompt: "What is the SI base unit of electric current? Name the unit and the scientist it is named after."
+    expected_answer: "ampere, André-Marie Ampère"
+
+  # Style
+  - id: style-001
+    category: style
+    difficulty: 0.3
+    prompt: "Write a haiku about a rainy day. Follow the traditional 5-7-5 syllable structure."
+    expected_answer: null
+
+  # Coding
+  - id: coding-001
+    category: coding
+    difficulty: 0.3
+    prompt: 'Write a Python function: def is_palindrome(s: str) -> bool: The function should return True if the string is a palindrome (reads the same forwards and backwards), ignoring case and non-alphanumeric characters. Examples: is_palindrome("racecar") -> True, is_palindrome("A man, a plan, a canal: Panama") -> True, is_palindrome("hello") -> False. Provide only the complete function code.'
+    expected_answer: null
+
+  - id: coding-002
+    category: coding
+    difficulty: 0.5
+    prompt: "Write a Python function: def two_sum(nums: list[int], target: int) -> list[int]: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target. Assume exactly one solution exists. Examples: two_sum([2,7,11,15], 9) -> [0,1], two_sum([3,2,4], 6) -> [1,2]. Provide only the complete function."
+    expected_answer: null
