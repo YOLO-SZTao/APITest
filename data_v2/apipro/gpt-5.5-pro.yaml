@@ -1,0 +1,66 @@
+format: auto
+channel:
+  name: apipro
+  base_url: https://api.apipro.ai/v1
+  date: 2026-05-20 07:06
+model:
+  requested: gpt-5.5-pro
+  returned: null
+  note: ''
+basic:
+  chat_completions: fail
+  chat_error: 'Server error ''500 Internal Server Error'' for url ''https://api.apipro.ai/v1/chat/completions''
+
+    For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500'
+  response_preview: null
+  usage: null
+  responses: not_tested
+  responses_error: null
+  models_count: 197
+  supported_endpoints:
+  - anthropic
+  - gemini
+  - image-generation
+  - openai
+  - openai-response
+  - openai-video
+performance:
+  response_times_ms: []
+  response_times_avg_ms: null
+  network_baseline_ms: 140
+  streaming_supported: null
+  throughput_tok_s: null
+  probe_throughputs: []
+self_id:
+  samples: []
+  consistency: null
+  consistency_detail: null
+  common_pattern: null
+security:
+  probes: []
+probes:
+  results: []
+token_injection:
+  tested: false
+  baseline_tokens: null
+  injected_tokens: null
+  injection_fixed: null
+hidden_prompt:
+  tested: false
+  attacks: []
+  extracted_content: null
+  cross_verified: false
+relay_architecture:
+  tested: false
+  fake_model_error: null
+  is_one_api: false
+  native_endpoints: {}
+judgment:
+  throughput_assessment: 无可用数据（吞吐量为 None tok/s，且非流式请求）
+  probes_comparison: 无可用数据（chat/completions 端点返回 fail，无法执行探针测试）
+  self_id_analysis: 无可用数据（模型自称一致性为 None，无法分析）
+  architecture_note: 系统提示泄漏探针 0 次，疑似泄漏 0 次；未检测到 one-api 路由架构特征；隐藏 prompt 检测结果未知
+  token_injection_note: 无可用数据（未执行 Token 注入测试）
+  capability_level: 无法评估（API 端点返回失败，无任何有效响应数据）
+  recommendation: 不推荐
+  analysis: 该渠道端点（chat/completions）返回 fail，无法获取任何有效响应。吞吐量、探针表现、模型自称、Token 注入等关键维度均无数据。建议联系渠道方确认服务状态，或更换其他渠道进行测试。

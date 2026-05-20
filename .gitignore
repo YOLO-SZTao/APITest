@@ -1,0 +1,36 @@
+# ── 敏感信息 ──
+channels.txt
+
+# ── 硬编码了 key 的脚本 ──
+recalc_throughput.py
+rejudge_all.py
+run_all_v2.py
+run_apipro.py
+run_batch.py
+run_boosterai.py
+run_retry.py
+
+# ── 旧版 v1 数据 ──
+data/
+reports/
+legacy/
+
+# ── 旧版 pip 包结构（已废弃，当前使用 scripts/） ──
+src/
+pyproject.toml
+
+# ── 调研文档 ──
+supertoken-*
+
+# ── 杂项模板 ──
+prompts/
+examples/
+
+# ── 本地配置 ──
+.claude/
+CLAUDE.md
+
+# ── 缓存 ──
+__pycache__/
+*.pyc
+.DS_Store
