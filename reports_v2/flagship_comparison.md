@@ -27,7 +27,7 @@
 | boosterai | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 70.6 | 9/9 | ⚠️ 23t | 1.50/7.50 | I'm Claude, created by Anthropic. I don't have access to inf | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | pandatoken.b | claude-sonnet-4-6 | Claude Sonnet | openai | N/A | N/A | N/A | N/A | 1.48/7.38 (9.4折) | N/A | N/A | ✅ 无明显问题 |
 | pandatoken.c | claude-sonnet-4-6 | Claude Sonnet | anthropic | ✅ | 63.1 | 7/9 | ✅ 8t | 1.15/5.74 (7.4折) | I'm Claude, made by Anthropic. As for the exact version numb | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
-| effitech | claude-opus-4-7 | Claude | openai | N/A | N/A | N/A | N/A | 2.50/12.50 | N/A | N/A | ✅ 无明显问题 |
+| effitech | claude-opus-4-7 | Claude | openai | ✅ | 126.1 | 8/9 | ✅ 12t | 2.50/12.50 | I'm Claude, an AI assistant made by Anthropic. As for the ex | ⚠️ 疑似隐藏 prompt | ✅ 无明显问题 |
 | effitech | claude-sonnet-4-5 | Claude Sonnet | openai | N/A | N/A | N/A | N/A | 1.50/7.50 | N/A | N/A | ✅ 无明显问题 |
 | effitech | gpt-5.5 | GPT | openai | N/A | N/A | N/A | N/A | 2.50/20.00 | N/A | N/A | ✅ 无明显问题 |
 | effitech | gemini-3.1-pro-preview | Gemini | openai | N/A | N/A | N/A | N/A | 1.00/6.00 | N/A | N/A | ✅ 无明显问题 |
@@ -119,7 +119,7 @@ As for the exact model version, I don't have access to that spec
 | boosterai | claude-sonnet-4-6 | 70.6 | I'm Claude, created by Anthropic. I don't have acc |
 | pandatoken.b | claude-sonnet-4-6 | N/A | N/A |
 | pandatoken.c | claude-sonnet-4-6 | 63.1 | I'm Claude, made by Anthropic. As for the exact ve |
-| effitech | claude-opus-4-7 | N/A | N/A |
+| effitech | claude-opus-4-7 | 126.1 | I'm Claude, an AI assistant made by Anthropic. As  |
 | effitech | claude-sonnet-4-5 | N/A | N/A |
 | effitech | gpt-5.5 | N/A | N/A |
 | effitech | gemini-3.1-pro-preview | N/A | N/A |
@@ -145,7 +145,7 @@ As for the exact model version, I don't have access to that spec
 | apipro | claude-opus-4-7 | 162.6 | 0.59/2.94 | 🔴 调包(Kiro) |
 | apipro | claude-opus-4-6 | 88.8 | 0.47/2.36 | 🔴 调包(Kiro) |
 | boosterai | claude-opus-4-7 | 104.1 | 2.50/12.50 | 🟡 隐藏prompt |
-| effitech | claude-opus-4-7 | N/A | 2.50/12.50 | ✅ 无明显问题 |
+| effitech | claude-opus-4-7 | 126.1 | 2.50/12.50 | ✅ 无明显问题 |
 | pandatoken.b | claude-opus-4-7 | 157.7 | 2.46/12.30 (9.4折) | ✅ 无明显问题 |
 
 ---

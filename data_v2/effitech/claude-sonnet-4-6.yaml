@@ -1,0 +1,50 @@
+format: anthropic
+channel:
+  name: effitech
+  base_url: https://aigw.effitech.cn
+  date: 2026-05-20 09:34
+model:
+  requested: claude-sonnet-4-6
+  returned: null
+  note: ''
+basic:
+  chat_completions: fail
+  chat_error: 'Expecting value: line 1 column 1 (char 0)'
+  response_preview: null
+  usage: null
+  responses: not_tested
+  responses_error: null
+  models_count: null
+  supported_endpoints: []
+performance:
+  response_times_ms: []
+  response_times_avg_ms: null
+  network_baseline_ms: 140
+  streaming_supported: null
+  throughput_tok_s: null
+  probe_throughputs: []
+self_id:
+  samples: []
+  consistency: null
+  consistency_detail: null
+  common_pattern: null
+security:
+  probes: []
+probes:
+  results: []
+token_injection:
+  tested: false
+  baseline_tokens: null
+  injected_tokens: null
+  injection_fixed: null
+hidden_prompt:
+  tested: false
+  attacks: []
+  extracted_content: null
+  cross_verified: false
+relay_architecture:
+  tested: false
+  fake_model_error: null
+  is_one_api: false
+  native_endpoints: {}
+judgment: {}
